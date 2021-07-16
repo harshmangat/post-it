@@ -104,9 +104,9 @@ input[type=url]{
 
 /* Main Section */
 
-#firstPost, #secPost{
+.post{
   width: 35rem;
-  height: 31.3rem;
+  height: 32rem;
   background-color: rgb(250, 249, 249);
   margin: 2rem auto;
   border-radius: 7px;
@@ -117,11 +117,12 @@ input[type=url]{
   width: 31rem;
   height: 18rem;
   margin: 1rem 2rem; 
+  border-radius: 5px;
+  object-fit: cover;
 }
 
 .imgTitle{
   font-size: 18px;
-  /* font-weight: 400; */
   line-height: 2;
   display: flex;
   margin-left: 2rem;
@@ -139,7 +140,7 @@ input[type=url]{
 .para{
   margin-top: 1rem;
   display: flex;
-  /* text-indent: 3px; */
+  
   margin-left: 25px;
   display: inline-block;
   flex-wrap: wrap;
@@ -214,9 +215,9 @@ input[type=url]{
     margin-top: 0.5rem;
   }
   
-  #firstPost, #secPost{
+  .post, .post{
     width: 20rem;
-    height: 34rem;
+    height: 32rem;
     background-color: rgb(250, 249, 249);
     /* margin: 2rem ; */
     border-radius: 7px;
@@ -261,6 +262,7 @@ input[type=url]{
 .category{
   padding: 0.3rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: 1.5rem;
   font-family: 'Montserrat';
   color: #2563EB;
