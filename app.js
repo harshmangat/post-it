@@ -1,6 +1,7 @@
 let title = document.querySelector("#title");
 let paragraph = document.querySelector("#paragraph");
 let imageUrl = document.querySelector("#url");
+let category =  document.querySelector("#category");
 let postBtn = document.querySelector("#post");
 let form = document.querySelector("form");
 // let imageTitle = document.querySelector(".imgTitle");
@@ -10,6 +11,7 @@ let form = document.querySelector("form");
 let userInput = title;
 let userUrl =imageUrl;
 let userQuote = paragraph;
+let userCategory = category;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -33,17 +35,14 @@ function addPost(){
   imgTitle.className= "imgTitle";
   paraDiv.className = "para";
   pTag.className= "text";
-  categoryBtn.className = "category"
+  categoryBtn.className = "category";
 
   image.src = userUrl.value;
   imgTitle.innerHTML = userInput.value;
   pTag.innerHTML = userQuote.value;
-  categoryBtn.innerHTML = "Category"
+  categoryBtn.innerHTML = userCategory.value;
   bodyElement.appendChild(post);
   post.append(image,imgTitle,paraDiv,categoryBtn);
   paraDiv.appendChild(pTag);
   
-
-  console.log(post,userQuote.value);
-
 }

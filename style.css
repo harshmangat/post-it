@@ -106,7 +106,7 @@ input[type=url]{
 
 .post{
   width: 35rem;
-  height: 32rem;
+  height: object-fit;
   background-color: rgb(250, 249, 249);
   margin: 2rem auto;
   border-radius: 7px;
@@ -151,6 +151,7 @@ input[type=url]{
   padding: 0.3rem;
   margin-top: 1rem;
   margin-left: 1.5rem;
+  margin-bottom: 1rem;
   font-family: 'Montserrat';
   color: #2563EB;
   font-weight: 700;
@@ -217,7 +218,7 @@ input[type=url]{
   
   .post, .post{
     width: 20rem;
-    height: 32rem;
+    height: object-fit;
     background-color: rgb(250, 249, 249);
     /* margin: 2rem ; */
     border-radius: 7px;
